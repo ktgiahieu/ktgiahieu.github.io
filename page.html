@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeurIPS 2025 Social: The Role of AI in Scientific Peer Review</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the fade-in-up animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            opacity: 0; /* Start hidden */
+        }
+
+        .is-visible {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Style for active navigation link */
+        nav a.active {
+            color: #3b82f6; /* A blue color to indicate active state */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-lg font-bold text-slate-900">AI in Peer Review</h1>
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#schedule" class="hover:text-blue-600 transition-colors">Schedule</a>
+                    <a href="#speakers" class="hover:text-blue-600 transition-colors">Speakers</a>
+                    <a href="#organizers" class="hover:text-blue-600 transition-colors">Organizers</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pt-24">
+
+        <!-- Home Section -->
+        <section id="home" class="min-h-[60vh] flex flex-col justify-center py-20 scroll-mt-16">
+            <div class="text-center">
+                <p class="text-base font-semibold text-blue-600 tracking-wider">NeurIPS 2025 Social Event</p>
+                <h2 class="mt-4 text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight">The Role of AI in Scientific Peer Review</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    Join us for an interactive discussion on shaping the future of scientific peer review with AI. This social brings together researchers, practitioners, and stakeholders to explore actionable solutions for a more efficient, fair, and transparent review system.
+                </p>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-20 scroll-mt-16">
+            <h3 class="text-3xl font-bold text-center mb-12 text-slate-900">Event Schedule</h3>
+            <div class="space-y-8">
+                <!-- Schedule Item -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md flex items-start space-x-6">
+                    <div class="text-blue-600 font-bold w-24 text-right">0:00 - 0:05</div>
+                    <div class="flex-1 border-l-2 border-blue-200 pl-6">
+                        <h4 class="font-semibold text-lg text-slate-900">Welcome & Introduction</h4>
+                        <p class="text-slate-600">Opening remarks to kick off the discussion.</p>
+                    </div>
+                </div>
+                <!-- Schedule Item -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md flex items-start space-x-6">
+                    <div class="text-blue-600 font-bold w-24 text-right">0:05 - 1:05</div>
+                     <div class="flex-1 border-l-2 border-blue-200 pl-6">
+                        <h4 class="font-semibold text-lg text-slate-900">Invited Talks (15 mins each)</h4>
+                        <p class="text-slate-600">Four back-to-back insightful talks from leading experts to set the stage for our discussion.</p>
+                    </div>
+                </div>
+                <!-- Schedule Item -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md flex items-start space-x-6">
+                    <div class="text-blue-600 font-bold w-24 text-right">1:05 - 1:55</div>
+                    <div class="flex-1 border-l-2 border-blue-200 pl-6">
+                        <h4 class="font-semibold text-lg text-slate-900">Panel & Round-Table Discussion</h4>
+                        <p class="text-slate-600">An interactive Q&A with our panelists, followed by breakout discussions where all attendees can share ideas and perspectives.</p>
+                    </div>
+                </div>
+                 <!-- Schedule Item -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md flex items-start space-x-6">
+                    <div class="text-blue-600 font-bold w-24 text-right">1:55 - 2:00</div>
+                    <div class="flex-1 border-l-2 border-blue-200 pl-6">
+                        <h4 class="font-semibold text-lg text-slate-900">Closing Remarks</h4>
+                        <p class="text-slate-600">A brief wrap-up and final thoughts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="py-20 scroll-mt-16">
+            <h3 class="text-3xl font-bold text-center mb-12 text-slate-900">Invited Speakers & Panelists</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Speaker Card -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Joelle Pineau</h4>
+                    <p class="text-sm text-slate-500">McGill University, Canada</p>
+                </div>
+                <!-- Speaker Card -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Nihar B. Shah</h4>
+                    <p class="text-sm text-slate-500">Carnegie Mellon University, USA</p>
+                </div>
+                <!-- Speaker Card -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Nitya Thakkar</h4>
+                    <p class="text-sm text-slate-500">Stanford University, USA</p>
+                </div>
+                <!-- Speaker Card -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Yutaro Yamada</h4>
+                    <p class="text-sm text-slate-500">Sakana AI, Japan</p>
+                </div>
+                <!-- Panelist Card -->
+                <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Chris Bregler</h4>
+                    <p class="text-sm text-slate-500">Google DeepMind, USA (Moderator)</p>
+                </div>
+                <!-- Panelist Card -->
+                 <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Thomas Dietterich</h4>
+                    <p class="text-sm text-slate-500">Oregon State U., USA</p>
+                </div>
+                 <!-- Panelist Card -->
+                 <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Andrew McCallum</h4>
+                    <p class="text-sm text-slate-500">UMass Amherst, USA</p>
+                </div>
+                 <!-- Panelist Card -->
+                 <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Nathan Srebro</h4>
+                    <p class="text-sm text-slate-500">TTIC & U. Chicago, USA</p>
+                </div>
+                 <!-- Panelist Card -->
+                 <div class="fade-in-up bg-white p-6 rounded-xl shadow-md text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">James Zou</h4>
+                    <p class="text-sm text-slate-500">Stanford University, USA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers Section -->
+        <section id="organizers" class="py-20 scroll-mt-16">
+            <h3 class="text-3xl font-bold text-center mb-12 text-slate-900">Organizing Committee</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <!-- Organizer Card -->
+                <div class="fade-in-up text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Isabelle Guyon</h4>
+                    <p class="text-sm text-slate-500">Google DeepMind & Univertité Paris-Saclay</p>
+                </div>
+                 <!-- Organizer Card -->
+                <div class="fade-in-up text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">K. T. Gia Hieu</h4>
+                    <p class="text-sm text-slate-500">Université Paris-Saclay</p>
+                </div>
+                 <!-- Organizer Card -->
+                <div class="fade-in-up text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">B. Kent Rachmat</h4>
+                    <p class="text-sm text-slate-500">Université Paris-Saclay</p>
+                </div>
+                 <!-- Organizer Card -->
+                <div class="fade-in-up text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Ihsan Ullah</h4>
+                    <p class="text-sm text-slate-500">ChaLearn</p>
+                </div>
+                 <!-- Organizer Card -->
+                <div class="fade-in-up text-center">
+                    <h4 class="font-semibold text-lg text-slate-900">Zhen (Zach) Xu</h4>
+                    <p class="text-sm text-slate-500">University of Chicago</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-10 border-t border-slate-200">
+        <p class="text-sm text-slate-500">&copy; 2025 NeurIPS Social: The Role of AI in Scientific Peer Review.</p>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Intersection Observer for fade-in animations ---
+    const animatedElements = document.querySelectorAll('.fade-in-up');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    animatedElements.forEach(el => {
+        observer.observe(el);
+    });
+
+    // --- Intersection Observer for active nav link highlighting ---
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
+                });
+            }
+        });
+    }, {
+        rootMargin: '-50% 0px -50% 0px', // Trigger when the section is in the middle of the viewport
+        threshold: 0
+    });
+
+    sections.forEach(section => {
+        navObserver.observe(section);
+    });
+});
+</script>
+</body>
+</html>
