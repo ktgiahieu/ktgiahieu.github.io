@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap"
       rel="stylesheet"
     >
     <link
@@ -63,57 +63,81 @@
         <p class="kicker">Hello, I'm</p>
         <h1 id="intro-title">Khuong T.G. Hieu</h1>
         <p class="tagline">PhD candidate at Inria | SaclAI scholar</p>
-        <p class="subtagline">
-          Building reliable evaluation methods for large language models and AI-assisted science.
-        </p>
+        <p class="subtagline">Researching trustworthy evaluation for language models.</p>
 
         <nav class="links" aria-label="Social and contact links">
           <a
-            class="link-card"
+            class="icon-link"
             href="https://www.linkedin.com/in/hieu-khuong"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn profile"
+            data-label="LinkedIn"
           >
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            <span>LinkedIn</span>
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
           </a>
           <a
-            class="link-card"
+            class="icon-link"
             href="https://github.com/ktgiahieu"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub profile"
+            data-label="GitHub"
           >
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-            <span>GitHub</span>
+            <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
           </a>
           <a
-            class="link-card"
+            class="icon-link"
             href="https://www.kaggle.com/ktgiahieu"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Kaggle profile"
+            data-label="Kaggle"
           >
             <i class="fa-brands fa-kaggle" aria-hidden="true"></i>
-            <span>Kaggle</span>
           </a>
           <a
-            class="link-card"
+            class="icon-link"
             href="https://scholar.google.com/citations?user=ZSmw9PwAAAAJ&hl=en"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Google Scholar profile"
+            data-label="Scholar"
           >
             <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-            <span>Scholar</span>
           </a>
-          <div class="link-card email-card" role="note" aria-label="Email address">
+          <button
+            id="contact-trigger"
+            class="icon-link contact-button"
+            type="button"
+            aria-controls="contact-email"
+            aria-expanded="false"
+            aria-label="Contact me"
+            data-label="Contact me"
+          >
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            <span>ktgiahieu (at) gmail (dot) com</span>
-          </div>
+          </button>
         </nav>
+        <p id="contact-email" class="email-reveal" hidden>ktgiahieu (at) gmail (dot) com</p>
       </section>
     </main>
+    <script>
+      const trigger = document.getElementById("contact-trigger");
+      const email = document.getElementById("contact-email");
+      if (trigger && email) {
+        trigger.addEventListener("click", () => {
+          const isHidden = email.hasAttribute("hidden");
+          if (isHidden) {
+            email.removeAttribute("hidden");
+            trigger.setAttribute("aria-expanded", "true");
+            trigger.setAttribute("data-label", "Hide email");
+          } else {
+            email.setAttribute("hidden", "");
+            trigger.setAttribute("aria-expanded", "false");
+            trigger.setAttribute("data-label", "Contact me");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
